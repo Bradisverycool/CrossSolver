@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Solver</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Word Solver</h1>
+        <nav>
+            <a href="#crossword">Crossword Solver</a>
+            <a href="#wordsearch">Word Search Solver</a>
+        </nav>
+    </header>
+    
+    <section id="crossword">
+        <h2>Crossword Solver</h2>
+        <textarea id="crossword-input" placeholder="Enter clues here..."></textarea>
+        <button onclick="solveCrossword()">Solve</button>
+        <div id="loading" class="loading" style="display:none;">Loading...</div>
+        <div id="crossword-output"></div>
+    </section>
+
+    <section id="wordsearch">
+        <h2>Word Search Solver</h2>
+        <textarea id="wordsearch-input" placeholder="Enter grid here..."></textarea>
+        <input id="words-input" placeholder="Enter words to find (comma-separated)">
+        <button onclick="solveWordSearch()">Solve</button>
+        <div id="wordsearch-output"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
