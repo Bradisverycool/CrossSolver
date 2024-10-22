@@ -1,4 +1,4 @@
-const API_KEY = 'YOUR_API_KEY'; // Replace with your actual API key
+const API_KEY = 'a797dd08d9msh35eb9aa74654518p187e4ajsn32f8e87e05ae'; // Replace with your actual API key
 
 async function fetchDefinition(word) {
     const response = await fetch(`https://wordsapiv1.p.rapidapi.com/words/${word}`, {
